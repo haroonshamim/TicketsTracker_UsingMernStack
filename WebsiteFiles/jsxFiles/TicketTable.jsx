@@ -22,18 +22,17 @@ render()
             </thead>    
            
             <tbody>
-                    <TicketRow rowStyle={rowstyle} ticket_ID="This is Ticket 1 ID" 
-                    ticket_Title="This is Ticket 1 Title" 
-                    ticket_Status="This is Ticket 1 Status" 
-                    ticket_Owner="This is Ticket 1 Owner" 
-                    ticket_Effort="This is Ticket 1 Effort"/>
+                   <TicketRow 
+                    rowStyle={rowstyle}
+                    ticket_ID="This is Ticket 1 ID"
+                  >
+                    <td style={rowstyle}>This is Ticket 1 Title</td>
+                    <td style={rowstyle}>This is Ticket 1 Status</td>
+                    <td style={rowstyle}>This is Ticket 1 Owner</td>
+                    <td style={rowstyle}>This is Ticket 1 Effort</td>
+                  </TicketRow>
 
-                         <TicketRow rowStyle={rowstyle} ticket_ID="This is Ticket 2 ID" 
-                    ticket_Title="This is Ticket 2 Title" 
-                    ticket_Status="This is Ticket 2 Status" 
-                    ticket_Owner="This is Ticket 2 Owner" 
-                    ticket_Effort="This is Ticket 2 Effort"/>
-                   
+                         
                     
             </tbody>
        </table>
