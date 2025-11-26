@@ -11,11 +11,13 @@ render()
             {this.props.children} */}
            
 
-            <td style={style}>{this.props.ticket.id}</td>
-            <td style={style}>{ticket.title}</td>
-            <td style={style}>{ticket.Status}</td>
-            <td style={style}>{ticket.Owner}</td>
-            <td style={style}>{ticket.effort}</td>
+            <td >{this.props.ticket.id}</td>
+            <td >{ticket.title}</td>
+            <td >{ticket.Status}</td>
+            <td>{ticket.Owner}</td>
+            <td>{ticket.effort}</td>
+            <td>{ticket.created ? new Date(ticket.created).toDateString() : ''}</td>
+            <td>{ticket.due ? new Date(ticket.due).toDateString() : ''}</td>
         </tr> 
     );
 }
