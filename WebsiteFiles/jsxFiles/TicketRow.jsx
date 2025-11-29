@@ -4,8 +4,11 @@ render()
 { const ticket = this.props.ticket; 
   {
     const style=this.props.rowStyle;
-    
+     console.log("Rendering TicketRow → ID:", ticket.id, "Title:", ticket.title);
     return (
+      
+   
+
         <tr>
           {/*   <td style={style}>{this.props.ticket_ID}</td>
             {this.props.children} */}
